@@ -1,0 +1,39 @@
+{% load static %}
+<div class="page-wrapper">
+  <div class="container-xl">
+    <!-- Page title -->
+    <div class="page-header d-print-none">
+      <div class="row align-items-center">
+        <div class="col">
+          <h2 class="page-title desk-title" id="deskNameId_{{desk_single.id}}">{{desk_single.desk_name}}</h2>
+          {% comment %} <div class="text-muted mt-1">About 2,410 result (0.19 seconds)</div> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container-xl">
+      <div class="row mb-3 align-items-end" id="folder-list-AJAX-load">
+
+      </div>
+    </div>
+  </div>
+  <div class="container-xl">
+    <!-- Page title 
+    <div class="page-header d-print-none">
+      <div class="row align-items-center">
+        <div class="col">
+          <h2 class="page-title">Grievance Files</h2>
+          <div class="text-muted mt-1">About 2,410 result (0.19 seconds)</div>
+        </div>
+      </div>
+    </div>
+    -->
+  </div>
+  {% include "search-results.html"%}
+  <script src="{% static 'js/DisplayWorkSpaceFolderList.js' %}"></script>
+</div>
+
+{% comment %} <script src="{% static '/js/CreateFolder.js' %}"></script> {% endcomment %}
+
+
